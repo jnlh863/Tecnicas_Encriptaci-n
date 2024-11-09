@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Tecnicas_Encriptacion">
+      <UniqueIdentifier>{10dd89e5-b9e3-4681-ac4c-cd1c00892217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tecnicas_Encriptacion\Interfaces">
+      <UniqueIdentifier>{bd5fe239-9296-4377-9f08-08427ad68f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Excepciones">
+      <UniqueIdentifier>{c8c09f6b-f4b8-42e4-9599-69c11d0ccd93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -29,6 +38,15 @@
     <ClInclude Include="Form1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Tecnica_Cesar.h">
+      <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Tecnica_Vigenere.h">
+      <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CaracterNoValidoExcepcion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -41,6 +59,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Form1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tecnica_Cesar.cpp">
+      <Filter>Tecnicas_Encriptacion</Filter>
+    </ClCompile>
+    <ClCompile Include="Tecnica_Vigenere.cpp">
+      <Filter>Tecnicas_Encriptacion</Filter>
+    </ClCompile>
+    <ClCompile Include="uno.cpp">
+      <Filter>Excepciones</Filter>
+    </ClCompile>
+    <ClCompile Include="dos.cpp">
+      <Filter>Excepciones</Filter>
+    </ClCompile>
+    <ClCompile Include="CaracterNoValidoExcepcion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
