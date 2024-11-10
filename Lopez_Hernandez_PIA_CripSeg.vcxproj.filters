@@ -22,6 +22,12 @@
     <Filter Include="Excepciones">
       <UniqueIdentifier>{c8c09f6b-f4b8-42e4-9599-69c11d0ccd93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Excepciones\Interfaz">
+      <UniqueIdentifier>{11ce5d4e-fe8f-4ad2-a7e9-d00457213ab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tecnicas_Encriptacion\Mappeo">
+      <UniqueIdentifier>{1cf6c75f-7a3e-45aa-96f4-31d6b29b3227}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -38,14 +44,17 @@
     <ClInclude Include="Form1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Tecnica_Cesar.h">
-      <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
-    </ClInclude>
     <ClInclude Include="Tecnica_Vigenere.h">
       <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="CaracterNoValidoExcepcion.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="MensajeExcepcion.h">
+      <Filter>Excepciones\Interfaz</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapa.h">
+      <Filter>Tecnicas_Encriptacion\Mappeo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tecnica_Cesar.h">
+      <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -67,14 +76,8 @@
     <ClCompile Include="Tecnica_Vigenere.cpp">
       <Filter>Tecnicas_Encriptacion</Filter>
     </ClCompile>
-    <ClCompile Include="uno.cpp">
-      <Filter>Excepciones</Filter>
-    </ClCompile>
-    <ClCompile Include="dos.cpp">
-      <Filter>Excepciones</Filter>
-    </ClCompile>
-    <ClCompile Include="CaracterNoValidoExcepcion.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Mapa.cpp">
+      <Filter>Tecnicas_Encriptacion\Mappeo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

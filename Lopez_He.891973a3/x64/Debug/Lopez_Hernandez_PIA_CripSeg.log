@@ -1,18 +1,12 @@
 ﻿  pch.cpp
   AssemblyInfo.cpp
-  CaracterNoValidoExcepcion.cpp
   CppCLR_WinFormsProject.cpp
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\CaracterNoValidoExcepcion.cpp(1,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   Form1.cpp
+  Mapa.cpp
   Tecnica_Cesar.cpp
   Tecnica_Vigenere.cpp
   Generando código...
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Vigenere.cpp(10,1): error C4716: 'Tecnica_Vigenere::encriptacion_Vigenere': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Vigenere.cpp(14,1): error C4716: 'Tecnica_Vigenere::desencriptacion_Vigenere': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Vigenere.cpp(18,1): error C4716: 'Tecnica_Vigenere::completarClave': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Vigenere.cpp(23,1): error C4716: 'Tecnica_Vigenere::mappeoLetraValor': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Vigenere.cpp(27,1): error C4716: 'Tecnica_Vigenere::mappeoValorLetra': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Cesar.cpp(12,1): error C4716: 'Tecnica_Cesar::encriptacion_Cesar': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Cesar.cpp(16,1): error C4716: 'Tecnica_Cesar::desencriptacion_Cesar': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Cesar.cpp(64,1): error C4716: 'Tecnica_Cesar::mappeoValorLetra': debe devolver un valor
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Tecnica_Cesar.cpp(60,1): warning C4715: 'Tecnica_Cesar::mappeoLetraValor': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Mapa.cpp(52,1): warning C4715: 'Mapa::mappeoLetraValor': no todas las rutas de acceso de control devuelven un valor
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  Lopez_Hernandez_PIA_CripSeg.vcxproj -> C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\x64\Debug\Lopez_Hernandez_PIA_CripSeg.exe

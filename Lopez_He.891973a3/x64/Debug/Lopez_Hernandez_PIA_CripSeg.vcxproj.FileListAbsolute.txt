@@ -1,0 +1,3 @@
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Lopez_He.891973a3\x64\Debug\Lopez_Hernandez_PIA_CripSeg.vcxproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Lopez_He.891973a3\x64\Debug\Lopez_Hernandez_PIA_CripSeg.Form1.resources
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Lopez_He.891973a3\x64\Debug\Lopez_Hernandez_PIA_CripSeg.vcxproj.GenerateResource.cache
