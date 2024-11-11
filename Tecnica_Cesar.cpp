@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Tecnica_Cesar.h"
-#include "Mapa.cpp"
+#include "Mapa.h"
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -15,21 +15,16 @@ std::string Tecnica_Cesar::encriptacion_Cesar(const std::string& mensaje, int cl
     char cLetra;
 
     for (int i = 0; i < mensaje.size(); i++) {
-        
-        char letraSig = ' ';
-
-        if (mensaje[i] == ' ') {
-            mensajeEncriptado += mensaje[i];
-            continue;
-        }
 
         valorLetra = mapa.mappeoLetraValor(mensaje[i]);
 
-        cNumero = valorLetra + (clave % 27);
+        if (valorLetra != -1) {
+            cNumero = valorLetra + (clave % 26);
 
-        cLetra = mapa.mappeoValorLetra(cNumero);
-
-        mensajeEncriptado += cLetra;
+            cLetra = mapa.mappeoValorLetra(cNumero);
+            
+            mensajeEncriptado += cLetra;
+        }
     }
 
     return mensajeEncriptado;
@@ -44,21 +39,21 @@ std::string Tecnica_Cesar::desencriptacion_Cesar(const std::string& mensaje, int
 
     for (int i = 0; i < mensaje.size(); i++) {
 
-        if (mensaje[i] == ' ') {
-            mensajeDesencriptado += mensaje[i];
-        }
-
         valorLetra = mapa.mappeoLetraValor(mensaje[i]);
 
-        mNumero = valorLetra - (clave % 27);
+        if (valorLetra != -1) {
 
-        while (mNumero < 0) {
-            mNumero = mNumero % 27;
+            mNumero = valorLetra - (clave % 26);
+
+            while (mNumero < 0) {
+                mNumero = (mNumero % 26 + 26) % 26;
+            }
+
+            mLetra = mapa.mappeoValorLetra(mNumero);
+
+            mensajeDesencriptado += mLetra;
+
         }
-
-        mLetra = mapa.mappeoValorLetra(mNumero);
-
-        mensajeDesencriptado += mLetra;
     }
 
     return mensajeDesencriptado;

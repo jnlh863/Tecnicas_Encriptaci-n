@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Tecnica_Vigenere.h"
-#include "Mapa.cpp"
+#include "Mapa.h"
 #include <iostream>
 #include <vector>
 #include <numeric>
@@ -29,7 +29,7 @@ std::string Tecnica_Vigenere::encriptacion_Vigenere(const std::string& mensaje, 
 			valorLetraM = mapa.mappeoLetraValor(mensaje[i]);
 			valorletraClv = mapa.mappeoLetraValor(nuevaClave[j]);
 
-			cNumero = (valorLetraM + valorletraClv) % 27;
+			cNumero = (valorLetraM + valorletraClv) % 26;
 			cLetra = mapa.mappeoValorLetra(cNumero);
 
 			mensajeEncriptado += cLetra;
@@ -67,11 +67,12 @@ std::string Tecnica_Vigenere::desencriptacion_Vigenere(const std::string& mensaj
 			valorLetraC = mapa.mappeoLetraValor(mensaje[i]);
 			valorletraClv = mapa.mappeoLetraValor(nuevaClave[j]);
 
-			mNumero = (valorLetraC - valorletraClv) % 27;
+			mNumero = (valorLetraC - valorletraClv) % 26;
 			
 			while (mNumero < 0) {
-				mNumero = mNumero % 27;
+				mNumero = (mNumero % 26 + 26) % 26;
 			}
+
 			mLetra = mapa.mappeoValorLetra(mNumero);
 
 			mensajeDesencriptado += mLetra;
@@ -90,7 +91,6 @@ std::string Tecnica_Vigenere::desencriptacion_Vigenere(const std::string& mensaj
 
 std::string Tecnica_Vigenere::completarClave(const std::string& mensaje, const std::string& clave) {
 	
-	int dif;
 	std::string complementoClave = "";
 	std::string nuevaClave = "";
 	std::vector<char> letrasM, letrasClv;
@@ -98,15 +98,22 @@ std::string Tecnica_Vigenere::completarClave(const std::string& mensaje, const s
 	int i = 0;
 	int j = 0;
 
-	while (i < mensaje.size() && j < clave.size()) {
+	while (i < mensaje.size()) {
 
 		if (mensaje[i] != ' ') {
 			letrasM.push_back(mensaje[i]);
 		}
 
+		i++;
+	}
+
+	while (j < clave.size()) {
+
 		if (clave[j] != ' ') {
 			letrasClv.push_back(clave[j]);
 		}
+
+		j++;
 	}
 
 	nuevaClave = std::accumulate(letrasClv.begin(),
@@ -115,10 +122,8 @@ std::string Tecnica_Vigenere::completarClave(const std::string& mensaje, const s
 
 	if (letrasM.size() > letrasClv.size()) {
 
-		dif = letrasM.size() - letrasClv.size();
-
-		for (int i = 0; i < dif; i++) {
-			complementoClave += letrasClv[i];
+		for (int i = 0; i < letrasM.size(); i++) {
+			complementoClave += letrasClv[i % letrasClv.size()];
 		}
 
 		nuevaClave += complementoClave;

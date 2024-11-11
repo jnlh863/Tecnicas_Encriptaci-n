@@ -26,28 +26,33 @@ int Mapa::mappeoLetraValor(char letra) {
 	abecedario['L'] = 11;
 	abecedario['M'] = 12;
 	abecedario['N'] = 13;
-	abecedario['Ñ'] = 14;
-	abecedario['O'] = 15;
-	abecedario['P'] = 16;
-	abecedario['Q'] = 17;
-	abecedario['R'] = 18;
-	abecedario['S'] = 19;
-	abecedario['T'] = 20;
-	abecedario['U'] = 21;
-	abecedario['V'] = 22;
-	abecedario['W'] = 23;
-	abecedario['X'] = 24;
-	abecedario['Y'] = 25;
-	abecedario['Z'] = 26;
+    abecedario['O'] = 14;
+	abecedario['P'] = 15;
+	abecedario['Q'] = 16;
+	abecedario['R'] = 17;
+	abecedario['S'] = 18;
+	abecedario['T'] = 19;
+	abecedario['U'] = 20;
+	abecedario['V'] = 21;
+	abecedario['W'] = 22;
+	abecedario['X'] = 23;
+	abecedario['Y'] = 24;
+	abecedario['Z'] = 25;
+	
+	if (letra == ' ') {
+		return -1;
+	}
+	else {
 
-	if (!isalpha(letra)) {
-		throw MensajeExcepcion().What();
+		if (!isalpha(letra)) {
+			throw gcnew MensajeExcepcion();
+		}
 	}
 
 	char letraMayus = toupper(letra);
 
-	if (abecedario.count(letra)) {
-		return abecedario[letra];
+	if (abecedario.count(letraMayus)) {
+		return abecedario[letraMayus];
 	}
 }
 
@@ -70,32 +75,20 @@ char Mapa::mappeoValorLetra(int valor) {
 	abecedario[11] = 'L';
 	abecedario[12] = 'M';
 	abecedario[13] = 'N';
-	abecedario[14] = 'Ñ';
-	abecedario[15] = 'O';
-	abecedario[16] = 'P';
-	abecedario[17] = 'Q';
-	abecedario[18] = 'R';
-	abecedario[19] = 'S';
-	abecedario[20] = 'T';
-	abecedario[21] = 'U';
-	abecedario[22] = 'V';
-	abecedario[23] = 'W';
-	abecedario[24] = 'X';
-	abecedario[25] = 'Y';
-	abecedario[26] = 'Z';
+	abecedario[14] = 'O';
+	abecedario[15] = 'P';
+	abecedario[16] = 'Q';
+	abecedario[17] = 'R';
+	abecedario[18] = 'S';
+	abecedario[19] = 'T';
+	abecedario[20] = 'U';
+	abecedario[21] = 'V';
+	abecedario[22] = 'W';
+	abecedario[23] = 'X';
+	abecedario[24] = 'Y';
+	abecedario[25] = 'Z';
 
-	if (valor > 26) {
+	int indice = valor % abecedario.size();
 
-		pasosAdicionales = valor - 27;
-
-		for (int i = 0; i < valor; i++) {
-
-			if (i == valor - 1) {
-
-				return abecedario[i];
-			}
-		}
-	}
-
-	return abecedario[valor];
+	return abecedario[indice];
 }

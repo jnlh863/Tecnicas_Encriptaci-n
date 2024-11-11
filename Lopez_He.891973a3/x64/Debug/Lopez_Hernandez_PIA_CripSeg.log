@@ -1,12 +1,12 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
+﻿  AcercaDe.cpp
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Form1.h(402,26): warning C4101: 'e': variable local sin referencia
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Form1.h(500,26): warning C4101: 'e': variable local sin referencia
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: '=': conversión de 'wchar_t' a 'char'; posible pérdida de datos
   CppCLR_WinFormsProject.cpp
-  Form1.cpp
-  Mapa.cpp
-  Tecnica_Cesar.cpp
-  Tecnica_Vigenere.cpp
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Form1.h(402,26): warning C4101: 'e': variable local sin referencia
+C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Form1.h(500,26): warning C4101: 'e': variable local sin referencia
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: '=': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+  MyForm1.cpp
   Generando código...
-C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\Mapa.cpp(52,1): warning C4715: 'Mapa::mappeoLetraValor': no todas las rutas de acceso de control devuelven un valor
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  AcercaDe.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   Lopez_Hernandez_PIA_CripSeg.vcxproj -> C:\Users\Admin\Desktop\7TO SEMESTRE\Criptografia y Seguridad\PIA\Programa de encriptacion\Lopez_Hernandez_PIA_CripSeg\x64\Debug\Lopez_Hernandez_PIA_CripSeg.exe

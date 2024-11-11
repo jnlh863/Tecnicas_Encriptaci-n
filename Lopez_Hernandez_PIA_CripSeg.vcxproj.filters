@@ -56,6 +56,12 @@
     <ClInclude Include="Tecnica_Cesar.h">
       <Filter>Tecnicas_Encriptacion\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="AcercaDe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -78,6 +84,12 @@
     </ClCompile>
     <ClCompile Include="Mapa.cpp">
       <Filter>Tecnicas_Encriptacion\Mappeo</Filter>
+    </ClCompile>
+    <ClCompile Include="AcercaDe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm1.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
