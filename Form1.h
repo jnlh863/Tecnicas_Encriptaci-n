@@ -39,13 +39,13 @@ namespace CppCLRWinFormsProject {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::MenuStrip^ Menu;
+
 	protected:
 
 
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^ salirToolStripMenuItem;
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::ComboBox^ tecnicas;
@@ -82,8 +82,6 @@ namespace CppCLRWinFormsProject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->Menu = (gcnew System::Windows::Forms::MenuStrip());
-			this->salirToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->tecnicas = (gcnew System::Windows::Forms::ComboBox());
@@ -96,26 +94,7 @@ namespace CppCLRWinFormsProject {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->clave = (gcnew System::Windows::Forms::TextBox());
 			this->mensaje_error = (gcnew System::Windows::Forms::Label());
-			this->Menu->SuspendLayout();
 			this->SuspendLayout();
-			// 
-			// Menu
-			// 
-			this->Menu->BackColor = System::Drawing::Color::CornflowerBlue;
-			this->Menu->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Menu->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->salirToolStripMenuItem });
-			this->Menu->Location = System::Drawing::Point(0, 0);
-			this->Menu->Name = L"Menu";
-			this->Menu->Size = System::Drawing::Size(710, 29);
-			this->Menu->TabIndex = 0;
-			this->Menu->Text = L"menuStrip1";
-			// 
-			// salirToolStripMenuItem
-			// 
-			this->salirToolStripMenuItem->Name = L"salirToolStripMenuItem";
-			this->salirToolStripMenuItem->Size = System::Drawing::Size(53, 25);
-			this->salirToolStripMenuItem->Text = L"Salir";
 			// 
 			// label1
 			// 
@@ -274,11 +253,8 @@ namespace CppCLRWinFormsProject {
 			this->Controls->Add(this->tecnicas);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->Menu);
 			this->Name = L"Form1";
 			this->Text = L"Técnicas de encriptación";
-			this->Menu->ResumeLayout(false);
-			this->Menu->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
