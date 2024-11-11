@@ -361,6 +361,7 @@ private: System::Void btn_limpiar_Click(System::Object^ sender, System::EventArg
 	}
 	
 	this->btn_aceptar->Enabled = true;
+	this->mensaje->Enabled = true;
 
 	this->tecnicas->Text = "";
 	this->mensaje->Text = "";
